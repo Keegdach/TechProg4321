@@ -1,0 +1,6 @@
+1. Speed: 315; Distance: 630; Type: Planes; Range: 1000; Carry: 500;
+2. Speed: 80; Distance: 500; Type: Train; Length: 14;
+3. Speed: 200; Distance: 200; Type: Train; Length: 50;
+4. Speed: 100; Distance: 100; Type: Planes; Range: 100; Carry: 100;
+5. Speed: 150; Distance: 1000; Type: Planes; Range: 400; Carry: 1225;
+6. Speed: 800; Distance: 8; Type: Train; Length: 120;
