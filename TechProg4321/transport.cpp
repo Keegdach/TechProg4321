@@ -27,7 +27,8 @@ transport* Read_Transport(std::ifstream& stream) {
 }
 
 void Out_Transport(std::ofstream& stream, transport* tran) {
-    stream << "Speed: " << tran->speed << "; Distance: " << tran->distance << "; Type: ";
+    stream << "Speed: " << tran->speed << "; Distance: " << tran->distance <<
+        "; Time: " << Estimate_Time(tran) << "; Type: ";
     switch (tran->tr_type) {
     case T_type::PLANES:
         stream << "Planes";
@@ -38,4 +39,13 @@ void Out_Transport(std::ofstream& stream, transport* tran) {
         Out_Train(stream, tran->u.tr);
         break;
     }
+}
+
+int Estimate_Time(transport* tran) {
+    // Идеальное время прохождения пути (действительное число)
+    return tran->distance / tran->speed;
+}
+
+bool Comparator(transport* q1, transport* q2) {
+    return Estimate_Time(q1) < Estimate_Time(q2);
 }
