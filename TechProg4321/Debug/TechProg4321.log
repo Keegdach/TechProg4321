@@ -1,2 +1,6 @@
-﻿  transport.cpp
+﻿  container.cpp
+  main.cpp
+  ship.cpp
+  transport.cpp
+  Создание кода...
   TechProg4321.vcxproj -> C:\Users\79832\source\repos\TechProg4321\Debug\TechProg4321.exe

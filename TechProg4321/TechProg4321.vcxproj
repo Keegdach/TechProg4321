@@ -142,12 +142,14 @@
     <ClCompile Include="container.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="planes.cpp" />
+    <ClCompile Include="ship.cpp" />
     <ClCompile Include="train.cpp" />
     <ClCompile Include="transport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container.h" />
     <ClInclude Include="planes.h" />
+    <ClInclude Include="ship.h" />
     <ClInclude Include="train.h" />
     <ClInclude Include="transport.h" />
   </ItemGroup>
