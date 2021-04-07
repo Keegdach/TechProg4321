@@ -23,12 +23,13 @@ transport* Read_Transport(std::ifstream& stream) {
     else delete temp_t;
     if (!stream.eof()) stream >> temp_t->distance;
     else delete temp_t;
+    if (!stream.eof()) stream >> temp_t->mass;
+    else delete temp_t;
     return temp_t;
 }
 
 void Out_Transport(std::ofstream& stream, transport* tran) {
-    stream << "Speed: " << tran->speed << "; Distance: " << tran->distance <<
-        "; Time: " << Estimate_Time(tran) << "; Type: ";
+    stream << "Speed: " << tran->speed << "; Distance: " << tran->distance <<"; Time: " << Estimate_Time(tran) << "; Mass of current cargo: " << tran->mass << "; Type: ";
     switch (tran->tr_type) {
     case T_type::PLANES:
         stream << "Planes";
@@ -49,3 +50,4 @@ int Estimate_Time(transport* tran) {
 bool Comparator(transport* q1, transport* q2) {
     return Estimate_Time(q1) < Estimate_Time(q2);
 }
+
