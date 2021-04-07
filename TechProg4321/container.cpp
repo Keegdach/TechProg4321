@@ -67,7 +67,7 @@ void Sort(container& con) {
 void Out_Container(std::ofstream& stream, container& con, T_type but) {
     element* el = con.starting;
     for (int i = 0; i < con.size; i++) {
-        if (el->t->tr_type != but) {
+        if (el->t->tr_type == but) {
             stream << i + 1 << ". ";
             Out_Transport(stream, el->t);
         }

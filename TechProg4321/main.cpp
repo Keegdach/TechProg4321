@@ -24,9 +24,11 @@ int main(int argc, char* argv[]) {
     Sort(c);
     Out_Container(ofst, c);
     ofst << "Print type 1(planes):" << std::endl;
-    Out_Container(ofst, c, T_type::TRAIN);
-    ofst << "Print type 2(trains):" << std::endl;
     Out_Container(ofst, c, T_type::PLANES);
+    ofst << "Print type 2(trains):" << std::endl;
+    Out_Container(ofst, c, T_type::TRAIN);
+    ofst << "Print type 3(ships):" << std::endl;
+    Out_Container(ofst, c, T_type::SHIP);
     containerClear(c);
     cout << "END" << endl;
     return 0;
