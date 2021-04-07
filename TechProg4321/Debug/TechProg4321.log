@@ -1,3 +1,5 @@
-﻿  transport.cpp
+﻿  container.cpp
+  main.cpp
+  Создание кода...
   LINK : не найден или не выполнена сборка C:\Users\79832\source\repos\TechProg4321\Debug\TechProg4321.exe при последней инкрементной компоновке; выполняется полная компоновка
   TechProg4321.vcxproj -> C:\Users\79832\source\repos\TechProg4321\Debug\TechProg4321.exe

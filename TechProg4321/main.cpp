@@ -23,6 +23,10 @@ int main(int argc, char* argv[]) {
     ofst << "Sorted container:" << std::endl;
     Sort(c);
     Out_Container(ofst, c);
+    ofst << "Print type 1(planes):" << std::endl;
+    Out_Container(ofst, c, T_type::TRAIN);
+    ofst << "Print type 2(trains):" << std::endl;
+    Out_Container(ofst, c, T_type::PLANES);
     containerClear(c);
     cout << "END" << endl;
     return 0;
