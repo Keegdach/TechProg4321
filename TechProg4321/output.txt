@@ -7,6 +7,12 @@
 7. Speed: 20; Distance: 5000; Time: 250; Mass of current cargo: 300.7; Type: Ship; Displacement: 1000; Ship type: Liner;
 8. Speed: 10; Distance: 200; Time: 20; Mass of current cargo: 13.8; Type: Ship; Displacement: 200; Ship type: Tug;
 9. Speed: 30; Distance: 3000; Time: 100; Mass of current cargo: 1500.8; Type: Ship; Displacement: 800; Ship type: Tanker;
+10. Speed: 1; Distance: 1; Time: 1; Mass of current cargo: 1; Type: Planes; Range: 1; Carry: 1;
+11. Speed: 2; Distance: 2; Time: 1; Mass of current cargo: 2; Type: Train; Length: 2;
+12. Speed: 3; Distance: 3; Time: 1; Mass of current cargo: 3; Type: Ship; Displacement: 3; Ship type: Tanker;
+13. Speed: 10; Distance: 10; Time: 1; Mass of current cargo: 10; Type: Planes; Range: 10; Carry: 10;
+14. Speed: 20; Distance: 20; Time: 1; Mass of current cargo: 20; Type: Train; Length: 20;
+15. Speed: 30; Distance: 30; Time: 1; Mass of current cargo: 30; Type: Ship; Displacement: 30; Ship type: Tanker;
 Sorted container:
 1. Speed: 20; Distance: 5000; Time: 250; Mass of current cargo: 300.7; Type: Ship; Displacement: 1000; Ship type: Liner;
 2. Speed: 30; Distance: 3000; Time: 100; Mass of current cargo: 1500.8; Type: Ship; Displacement: 800; Ship type: Tanker;
@@ -16,16 +22,28 @@ Sorted container:
 6. Speed: 315; Distance: 630; Time: 2; Mass of current cargo: 45.6; Type: Planes; Range: 1000; Carry: 500;
 7. Speed: 200; Distance: 200; Time: 1; Mass of current cargo: 5.3; Type: Train; Length: 50;
 8. Speed: 100; Distance: 100; Time: 1; Mass of current cargo: 10; Type: Planes; Range: 100; Carry: 100;
-9. Speed: 800; Distance: 8; Time: 0; Mass of current cargo: 30.5; Type: Train; Length: 120;
+9. Speed: 1; Distance: 1; Time: 1; Mass of current cargo: 1; Type: Planes; Range: 1; Carry: 1;
+10. Speed: 2; Distance: 2; Time: 1; Mass of current cargo: 2; Type: Train; Length: 2;
+11. Speed: 3; Distance: 3; Time: 1; Mass of current cargo: 3; Type: Ship; Displacement: 3; Ship type: Tanker;
+12. Speed: 10; Distance: 10; Time: 1; Mass of current cargo: 10; Type: Planes; Range: 10; Carry: 10;
+13. Speed: 20; Distance: 20; Time: 1; Mass of current cargo: 20; Type: Train; Length: 20;
+14. Speed: 30; Distance: 30; Time: 1; Mass of current cargo: 30; Type: Ship; Displacement: 30; Ship type: Tanker;
+15. Speed: 800; Distance: 8; Time: 0; Mass of current cargo: 30.5; Type: Train; Length: 120;
 Print type 1(planes):
 4. Speed: 150; Distance: 1000; Time: 6; Mass of current cargo: 100.7; Type: Planes; Range: 400; Carry: 1225;
 6. Speed: 315; Distance: 630; Time: 2; Mass of current cargo: 45.6; Type: Planes; Range: 1000; Carry: 500;
 8. Speed: 100; Distance: 100; Time: 1; Mass of current cargo: 10; Type: Planes; Range: 100; Carry: 100;
+9. Speed: 1; Distance: 1; Time: 1; Mass of current cargo: 1; Type: Planes; Range: 1; Carry: 1;
+12. Speed: 10; Distance: 10; Time: 1; Mass of current cargo: 10; Type: Planes; Range: 10; Carry: 10;
 Print type 2(trains):
 5. Speed: 80; Distance: 500; Time: 6; Mass of current cargo: 17.2; Type: Train; Length: 14;
 7. Speed: 200; Distance: 200; Time: 1; Mass of current cargo: 5.3; Type: Train; Length: 50;
-9. Speed: 800; Distance: 8; Time: 0; Mass of current cargo: 30.5; Type: Train; Length: 120;
+10. Speed: 2; Distance: 2; Time: 1; Mass of current cargo: 2; Type: Train; Length: 2;
+13. Speed: 20; Distance: 20; Time: 1; Mass of current cargo: 20; Type: Train; Length: 20;
+15. Speed: 800; Distance: 8; Time: 0; Mass of current cargo: 30.5; Type: Train; Length: 120;
 Print type 3(ships):
 1. Speed: 20; Distance: 5000; Time: 250; Mass of current cargo: 300.7; Type: Ship; Displacement: 1000; Ship type: Liner;
 2. Speed: 30; Distance: 3000; Time: 100; Mass of current cargo: 1500.8; Type: Ship; Displacement: 800; Ship type: Tanker;
 3. Speed: 10; Distance: 200; Time: 20; Mass of current cargo: 13.8; Type: Ship; Displacement: 200; Ship type: Tug;
+11. Speed: 3; Distance: 3; Time: 1; Mass of current cargo: 3; Type: Ship; Displacement: 3; Ship type: Tanker;
+14. Speed: 30; Distance: 30; Time: 1; Mass of current cargo: 30; Type: Ship; Displacement: 30; Ship type: Tanker;
