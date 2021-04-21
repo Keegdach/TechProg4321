@@ -1,6 +1,6 @@
 #include "planes.h"
 
-bool Read_Plane(planes& pl, std::ifstream& stream) {
+bool ReadPlane(planes& pl, std::ifstream& stream) {
     if (!stream.eof())
         stream >> pl.range;
     else return false;
@@ -10,6 +10,6 @@ bool Read_Plane(planes& pl, std::ifstream& stream) {
     return true;
 }
 
-void Out_Planes(std::ofstream& stream, planes& pl) {
+void OutPlanes(std::ofstream& stream, planes& pl) {
     stream << "; Range: " << pl.range << "; Carry: " << pl.carry << ";" << std::endl;
 }

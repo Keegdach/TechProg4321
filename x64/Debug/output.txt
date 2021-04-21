@@ -1,0 +1,1 @@
+1. Speed: 150; Distance: 1000; Time: 6; Mass: 45.5; Type: Planes; Range: 400; Carry: 1225;

@@ -1,44 +1,68 @@
 #include "transport.h"
 
 
-transport* Read_Transport(std::ifstream& stream) {
+transport* ReadTransport(std::ifstream& stream) {
     int type;
     stream >> type;
     transport* temp_t = nullptr;
     switch (type) {
-    case T_type::PLANES:
+    case t_type::PLANES:
         temp_t = new transport{};
-        Read_Plane(temp_t->u.pl, stream);
-        temp_t->tr_type = T_type::PLANES;
+        if (!ReadPlane(temp_t->u.pl, stream)) { return nullptr; }
+        temp_t->tr_type = t_type::PLANES;
         break;
-    case T_type::TRAIN:
+    case t_type::TRAIN:
         temp_t = new transport{};
-        Read_Train(temp_t->u.tr, stream);
-        temp_t->tr_type = T_type::TRAIN;
+        if (!ReadTrain(temp_t->u.tr, stream)) { return nullptr; }
+        temp_t->tr_type = t_type::TRAIN;
+        break;
+    case t_type::SHIP:
+        temp_t = new transport{};
+        if (!ReadShip(temp_t->u.sh, stream)) { return nullptr; }
+        temp_t->tr_type = t_type::SHIP;
         break;
     default:
         return temp_t;
     }
     if (!stream.eof()) stream >> temp_t->speed;
     else delete temp_t;
+    if (temp_t->speed <= 0) {
+        return nullptr;
+    }
     if (!stream.eof()) stream >> temp_t->distance;
     else delete temp_t;
     if (!stream.eof()) stream >> temp_t->mass;
     else delete temp_t;
+    if (temp_t->mass <= 0) {
+        return nullptr;
+    }
     return temp_t;
 }
 
-void Out_Transport(std::ofstream& stream, transport* tran) {
+void OutTransport(std::ofstream& stream, transport* tran) {
     stream << "Speed: " << tran->speed << "; Distance: " << tran->distance <<
-        "; Mass of current cargo: " << tran->mass << "; Type: ";
+        "; Time: " << EstimateTime(tran) << "; Mass: " << tran->mass << "; Type: ";
     switch (tran->tr_type) {
-    case T_type::PLANES:
+    case t_type::PLANES:
         stream << "Planes";
-        Out_Planes(stream, tran->u.pl);
+        OutPlanes(stream, tran->u.pl);
         break;
-    case T_type::TRAIN:
+    case t_type::TRAIN:
         stream << "Train";
-        Out_Train(stream, tran->u.tr);
+        OutTrain(stream, tran->u.tr);
+        break;
+    case t_type::SHIP:
+        stream << "Ship";
+        OutShip(stream, tran->u.sh);
         break;
     }
+}
+
+int EstimateTime(transport* tran) {
+    // Идеальное время прохождения пути (действительное число)
+    return tran->distance / tran->speed;
+}
+
+bool Comparator(transport* q1, transport* q2) {
+    return EstimateTime(q1) < EstimateTime(q2);
 }

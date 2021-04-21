@@ -1,9 +1,12 @@
-1. Speed: 150; Distance: 1000; Mass of current cargo: 45.5; Type: Planes; Range: 400; Carry: 1225;
-2. Speed: 800; Distance: 8; Mass of current cargo: 1; Type: Train; Length: 120;
+1. Speed: 150; Distance: 1000; Time: 6; Mass: 45.5; Type: Planes; Range: 400; Carry: 1225;
+2. Speed: 800; Distance: 8; Time: 0; Mass: 1; Type: Train; Length: 120;
+Sorted container:
+1. Speed: 150; Distance: 1000; Time: 6; Mass: 45.5; Type: Planes; Range: 400; Carry: 1225;
+2. Speed: 800; Distance: 8; Time: 0; Mass: 1; Type: Train; Length: 120;
 MULTIMETHOD
 | Planes + Train |
-Speed: 150; Distance: 1000; Mass of current cargo: 45.5; Type: Planes; Range: 400; Carry: 1225;
-Speed: 800; Distance: 8; Mass of current cargo: 1; Type: Train; Length: 120;
+Speed: 150; Distance: 1000; Time: 6; Mass: 45.5; Type: Planes; Range: 400; Carry: 1225;
+Speed: 800; Distance: 8; Time: 0; Mass: 1; Type: Train; Length: 120;
 | Train + Planes |
-Speed: 800; Distance: 8; Mass of current cargo: 1; Type: Train; Length: 120;
-Speed: 150; Distance: 1000; Mass of current cargo: 45.5; Type: Planes; Range: 400; Carry: 1225;
+Speed: 800; Distance: 8; Time: 0; Mass: 1; Type: Train; Length: 120;
+Speed: 150; Distance: 1000; Time: 6; Mass: 45.5; Type: Planes; Range: 400; Carry: 1225;

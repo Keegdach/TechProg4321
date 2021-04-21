@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\79832\source\repos\TechProg4321\x64\Debug\Sample-Test1.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="test1.T_Input" Duration="5" />
+    <TestDuration Test="test2.T_Input" Duration="1" />
+    <TestDuration Test="test3.T_Input" Duration="1" />
+    <TestDuration Test="test4.T_Input" Duration="2" />
+  </TestDurations>
+</GtaTestDurations>
