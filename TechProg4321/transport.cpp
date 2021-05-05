@@ -4,6 +4,13 @@
 transport* ReadTransport(std::ifstream& stream) {
     int type;
     stream >> type;
+    if (stream.eof()) {
+        return nullptr;
+    }
+    if (type < 1 || type > 3) {
+        std::cout << "Input error." << std::endl;
+        return nullptr;
+    }
     transport* temp_t = nullptr;
     switch (type) {
     case t_type::PLANES:
@@ -59,7 +66,7 @@ void OutTransport(std::ofstream& stream, transport* tran) {
 }
 
 int EstimateTime(transport* tran) {
-    // Èäåàëüíîå âðåìÿ ïðîõîæäåíèÿ ïóòè (äåéñòâèòåëüíîå ÷èñëî)
+    // ÃˆÃ¤Ã¥Ã Ã«Ã¼Ã­Ã®Ã¥ Ã¢Ã°Ã¥Ã¬Ã¿ Ã¯Ã°Ã®ÃµÃ®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿ Ã¯Ã³Ã²Ã¨ (Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®)
     return tran->distance / tran->speed;
 }
 
